@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoFinal_2015_0944.Menu;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
@@ -15,7 +16,7 @@ namespace ProyectoFinal_2015_0944
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new MainForm());
         }
     }
 }
