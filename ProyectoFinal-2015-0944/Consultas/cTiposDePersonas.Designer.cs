@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(cTiposDePersonas));
-            this.ImprimirButton = new System.Windows.Forms.Button();
-            this.BuscarButton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.CriterioTextBox = new System.Windows.Forms.TextBox();
@@ -40,33 +38,9 @@
             this.FechaInicialDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.BuscarButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.TiposDePersonasDataGridView)).BeginInit();
             this.SuspendLayout();
-            // 
-            // ImprimirButton
-            // 
-            this.ImprimirButton.Image = global::ProyectoFinal_2015_0944.Properties.Resources.impresora;
-            this.ImprimirButton.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.ImprimirButton.Location = new System.Drawing.Point(235, 439);
-            this.ImprimirButton.Name = "ImprimirButton";
-            this.ImprimirButton.Size = new System.Drawing.Size(72, 56);
-            this.ImprimirButton.TabIndex = 47;
-            this.ImprimirButton.Text = "Imprimir";
-            this.ImprimirButton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.ImprimirButton.UseVisualStyleBackColor = true;
-            // 
-            // BuscarButton
-            // 
-            this.BuscarButton.Image = global::ProyectoFinal_2015_0944.Properties.Resources.preview_search_find_locate_1551;
-            this.BuscarButton.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.BuscarButton.Location = new System.Drawing.Point(461, 86);
-            this.BuscarButton.Name = "BuscarButton";
-            this.BuscarButton.Size = new System.Drawing.Size(72, 40);
-            this.BuscarButton.TabIndex = 46;
-            this.BuscarButton.Text = "Buscar";
-            this.BuscarButton.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.BuscarButton.UseVisualStyleBackColor = true;
-            this.BuscarButton.Click += new System.EventHandler(this.buscarbutton_Click);
             // 
             // label2
             // 
@@ -152,16 +126,28 @@
             this.label4.TabIndex = 51;
             this.label4.Text = "Fecha Final";
             // 
+            // BuscarButton
+            // 
+            this.BuscarButton.Image = global::ProyectoFinal_2015_0944.Properties.Resources.preview_search_find_locate_1551;
+            this.BuscarButton.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BuscarButton.Location = new System.Drawing.Point(461, 86);
+            this.BuscarButton.Name = "BuscarButton";
+            this.BuscarButton.Size = new System.Drawing.Size(72, 40);
+            this.BuscarButton.TabIndex = 46;
+            this.BuscarButton.Text = "Buscar";
+            this.BuscarButton.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.BuscarButton.UseVisualStyleBackColor = true;
+            this.BuscarButton.Click += new System.EventHandler(this.buscarbutton_Click);
+            // 
             // cTiposDePersonas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(544, 507);
+            this.ClientSize = new System.Drawing.Size(544, 443);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.FechaFinalDateTimePicker);
             this.Controls.Add(this.FechaInicialDateTimePicker);
-            this.Controls.Add(this.ImprimirButton);
             this.Controls.Add(this.BuscarButton);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -180,8 +166,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button ImprimirButton;
         private System.Windows.Forms.Button BuscarButton;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;

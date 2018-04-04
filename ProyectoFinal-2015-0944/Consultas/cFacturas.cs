@@ -13,11 +13,10 @@ using System.Windows.Forms;
 
 namespace ProyectoFinal_2015_0944.Consultas
 {
-    public partial class cProductos : Form
+    public partial class cFacturas : Form
     {
-        Expression<Func<Productos, bool>> filtrar = x => true;
-
-        public cProductos()
+        Expression<Func<Facturas, bool>> filtrar = x => true;
+        public cFacturas()
         {
             InitializeComponent();
         }
@@ -30,37 +29,25 @@ namespace ProyectoFinal_2015_0944.Consultas
             if (FiltrarComboBox.SelectedIndex == 0)
             {
                 id = int.Parse(CriterioTextBox.Text);
-                filtrar = t => t.IdProducto == id;
+                filtrar = t => t.IdFactura == id;
             }
             else if (FiltrarComboBox.SelectedIndex == 1)
-                filtrar = t => t.Nombre.Contains(CriterioTextBox.Text);
+                filtrar = t => t.Observacion.Contains(CriterioTextBox.Text);
             else if (FiltrarComboBox.SelectedIndex == 2)
             {
                 p = double.Parse(CriterioTextBox.Text);
-                filtrar = t => t.Precio == p;
+                filtrar = t => t.Monto == p;
             }
             else if (FiltrarComboBox.SelectedIndex == 3)
-            {
-                id = int.Parse(CriterioTextBox.Text);
-                filtrar = t => t.Existencia == id;
-            }
-                
-            else if (FiltrarComboBox.SelectedIndex == 4)
-                filtrar = t => (t.FechaDeVencimiento >= FechaInicialDateTimePicker.Value) && (t.FechaDeVencimiento <= FechaFinalDateTimePicker.Value);
-            else if (FiltrarComboBox.SelectedIndex == 5)
-            {
-                p = double.Parse(CriterioTextBox.Text);
-                filtrar = t => t.Costo == p;
-            }
-                
-
-            TiposDePersonasDataGridView.DataSource = ProductosBLL.GetList(filtrar);
+                filtrar = t => (t.Fecha >= FechaInicialDateTimePicker.Value) && (t.Fecha <= FechaFinalDateTimePicker.Value);
+           
+            TiposDePersonasDataGridView.DataSource = FacturaDetalleBLL.GetList1(filtrar);
         }
 
         private void ImprimirButton_Click(object sender, EventArgs e)
         {
-            ImprimirProductos ip = new ImprimirProductos(ProductosBLL.GetList(filtrar));
-            ip.Show();
+            ImprimirFacturas ifac = new ImprimirFacturas(FacturaDetalleBLL.GetList1(filtrar));
+            ifac.Show();
         }
     }
 }

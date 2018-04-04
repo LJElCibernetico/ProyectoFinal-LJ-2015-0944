@@ -15,14 +15,16 @@ namespace ProyectoFinal_2015_0944.Entidades
         public int IdProducto { get; set; }
         public int Cantidad { get; set; }
         public Double Precio { get; set; }
+        public Double Importe { get; set; }
 
-        public FacturaDetalle(int idFacturaDetalle, int idFactura, int idProducto, int cantidad, double precio)
+        public FacturaDetalle(int idFacturaDetalle, int idFactura, int idProducto, int cantidad, double precio, double importe)
         {
             IdFacturaDetalle = idFacturaDetalle;
             IdFactura = idFactura;
             IdProducto = idProducto;
             Cantidad = cantidad;
             Precio = precio;
+            Importe = importe;
         }
 
         public FacturaDetalle()
@@ -32,6 +34,7 @@ namespace ProyectoFinal_2015_0944.Entidades
             IdProducto = 0;
             Cantidad = 0;
             Precio = 0;
+            Importe = 0;
         }
     }
 }

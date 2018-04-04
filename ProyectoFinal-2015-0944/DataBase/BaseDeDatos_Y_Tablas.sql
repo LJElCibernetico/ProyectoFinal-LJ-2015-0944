@@ -27,8 +27,8 @@ CREATE TABLE Usuarios (
   Comentario varchar(max)
 );
 
-insert into Usuario values('LJ','0515','04-02-2018','Luis Jose','Normal User');
-select * from Usuario;
+insert into Usuarios values('lj','0515','04-02-2018','Luis Jose','Normal User');
+select * from Usuarios;
 
 CREATE TABLE Departamentos (
   IdDepartamento int primary key identity(1,1),
@@ -56,7 +56,8 @@ CREATE TABLE FacturaDetalle (
   IdFactura int,
   IdProducto int,
   Cantidad int,
-  Precio Money
+  Precio Money,
+  Importe Money
 );
 
 CREATE TABLE Facturas (

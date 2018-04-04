@@ -103,6 +103,16 @@ namespace ProyectoFinal_2015_0944.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap INTEGRA_WAREHOUSE {
+            get {
+                object obj = ResourceManager.GetObject("INTEGRA-WAREHOUSE", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap inventario1 {
             get {
                 object obj = ResourceManager.GetObject("inventario1", resourceCulture);
@@ -146,6 +156,46 @@ namespace ProyectoFinal_2015_0944.Properties {
         internal static System.Drawing.Bitmap Save_as_37111 {
             get {
                 object obj = ResourceManager.GetObject("Save-as_37111", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap servicios_de_limpieza_de_almacenes_en_Madrid {
+            get {
+                object obj = ResourceManager.GetObject("servicios-de-limpieza-de-almacenes-en-Madrid", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Storage_2 {
+            get {
+                object obj = ResourceManager.GetObject("Storage-2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap zonificacion_almacen_1 {
+            get {
+                object obj = ResourceManager.GetObject("zonificacion-almacen-1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap zonificacion_almacen_11 {
+            get {
+                object obj = ResourceManager.GetObject("zonificacion-almacen-11", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

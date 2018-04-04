@@ -33,13 +33,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.FechaFinalDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.FechaInicialDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.ImprimirButton = new System.Windows.Forms.Button();
-            this.BuscarButton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.CriterioTextBox = new System.Windows.Forms.TextBox();
             this.TiposDePersonasDataGridView = new System.Windows.Forms.DataGridView();
             this.FiltrarComboBox = new System.Windows.Forms.ComboBox();
+            this.ImprimirButton = new System.Windows.Forms.Button();
+            this.BuscarButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.TiposDePersonasDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,31 +76,6 @@
             this.FechaInicialDateTimePicker.Name = "FechaInicialDateTimePicker";
             this.FechaInicialDateTimePicker.Size = new System.Drawing.Size(200, 20);
             this.FechaInicialDateTimePicker.TabIndex = 70;
-            // 
-            // ImprimirButton
-            // 
-            this.ImprimirButton.Image = global::ProyectoFinal_2015_0944.Properties.Resources.impresora;
-            this.ImprimirButton.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.ImprimirButton.Location = new System.Drawing.Point(234, 448);
-            this.ImprimirButton.Name = "ImprimirButton";
-            this.ImprimirButton.Size = new System.Drawing.Size(72, 56);
-            this.ImprimirButton.TabIndex = 69;
-            this.ImprimirButton.Text = "Imprimir";
-            this.ImprimirButton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.ImprimirButton.UseVisualStyleBackColor = true;
-            // 
-            // BuscarButton
-            // 
-            this.BuscarButton.Image = global::ProyectoFinal_2015_0944.Properties.Resources.preview_search_find_locate_1551;
-            this.BuscarButton.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.BuscarButton.Location = new System.Drawing.Point(460, 95);
-            this.BuscarButton.Name = "BuscarButton";
-            this.BuscarButton.Size = new System.Drawing.Size(72, 40);
-            this.BuscarButton.TabIndex = 68;
-            this.BuscarButton.Text = "Buscar";
-            this.BuscarButton.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.BuscarButton.UseVisualStyleBackColor = true;
-            this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
             // 
             // label2
             // 
@@ -155,6 +130,32 @@
             this.FiltrarComboBox.Name = "FiltrarComboBox";
             this.FiltrarComboBox.Size = new System.Drawing.Size(92, 21);
             this.FiltrarComboBox.TabIndex = 74;
+            // 
+            // ImprimirButton
+            // 
+            this.ImprimirButton.Image = global::ProyectoFinal_2015_0944.Properties.Resources.impresora;
+            this.ImprimirButton.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.ImprimirButton.Location = new System.Drawing.Point(234, 448);
+            this.ImprimirButton.Name = "ImprimirButton";
+            this.ImprimirButton.Size = new System.Drawing.Size(72, 56);
+            this.ImprimirButton.TabIndex = 69;
+            this.ImprimirButton.Text = "Imprimir";
+            this.ImprimirButton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.ImprimirButton.UseVisualStyleBackColor = true;
+            this.ImprimirButton.Click += new System.EventHandler(this.ImprimirButton_Click);
+            // 
+            // BuscarButton
+            // 
+            this.BuscarButton.Image = global::ProyectoFinal_2015_0944.Properties.Resources.preview_search_find_locate_1551;
+            this.BuscarButton.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BuscarButton.Location = new System.Drawing.Point(460, 95);
+            this.BuscarButton.Name = "BuscarButton";
+            this.BuscarButton.Size = new System.Drawing.Size(72, 40);
+            this.BuscarButton.TabIndex = 68;
+            this.BuscarButton.Text = "Buscar";
+            this.BuscarButton.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.BuscarButton.UseVisualStyleBackColor = true;
+            this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
             // 
             // cProductos
             // 

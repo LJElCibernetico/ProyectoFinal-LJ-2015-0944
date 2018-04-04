@@ -13,9 +13,13 @@ namespace ProyectoFinal_2015_0944.Menu
 {
     public partial class MainForm : Form
     {
-        public MainForm()
+        Login lo;
+        public MainForm(Login l)
         {
+            lo = l;
             InitializeComponent();
+            
+
         }
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
@@ -94,6 +98,32 @@ namespace ProyectoFinal_2015_0944.Menu
         private void productoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             cProductos cp = new cProductos();
+            cp.MdiParent = this;
+            cp.Show();
+        }
+
+        private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            lo.Close();
+        }
+
+        private void usuarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            rUsuarios ru = new rUsuarios();
+            ru.MdiParent = this;
+            ru.Show();
+        }
+
+        private void facturaToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            rFacturas rp = new rFacturas();
+            rp.MdiParent = this;
+            rp.Show();
+        }
+
+        private void facturaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            cFacturas cp = new cFacturas();
             cp.MdiParent = this;
             cp.Show();
         }

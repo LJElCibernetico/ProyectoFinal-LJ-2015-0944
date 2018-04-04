@@ -35,8 +35,9 @@ namespace ProyectoFinal_2015_0944
 
             if (user.Exists(x => x.Username == UsernameTextBox.Text) && user.Exists(x => x.Password == PasswordTextBox.Text))
             {
-                MainForm mf = new MainForm();
+                MainForm mf = new MainForm(this);
                 mf.Show();
+                this.Hide();
             }
             else
             {

@@ -28,17 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(cDepartamentos));
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.FechaFinalDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.FechaInicialDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.ImprimirButton = new System.Windows.Forms.Button();
-            this.BuscarButton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.CriterioTextBox = new System.Windows.Forms.TextBox();
             this.FiltrarComboBox = new System.Windows.Forms.ComboBox();
             this.TiposDePersonasDataGridView = new System.Windows.Forms.DataGridView();
+            this.BuscarButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.TiposDePersonasDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -75,31 +75,6 @@
             this.FechaInicialDateTimePicker.Name = "FechaInicialDateTimePicker";
             this.FechaInicialDateTimePicker.Size = new System.Drawing.Size(200, 20);
             this.FechaInicialDateTimePicker.TabIndex = 70;
-            // 
-            // ImprimirButton
-            // 
-            this.ImprimirButton.Image = global::ProyectoFinal_2015_0944.Properties.Resources.impresora;
-            this.ImprimirButton.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.ImprimirButton.Location = new System.Drawing.Point(235, 447);
-            this.ImprimirButton.Name = "ImprimirButton";
-            this.ImprimirButton.Size = new System.Drawing.Size(72, 56);
-            this.ImprimirButton.TabIndex = 69;
-            this.ImprimirButton.Text = "Imprimir";
-            this.ImprimirButton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.ImprimirButton.UseVisualStyleBackColor = true;
-            // 
-            // BuscarButton
-            // 
-            this.BuscarButton.Image = global::ProyectoFinal_2015_0944.Properties.Resources.preview_search_find_locate_1551;
-            this.BuscarButton.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.BuscarButton.Location = new System.Drawing.Point(461, 94);
-            this.BuscarButton.Name = "BuscarButton";
-            this.BuscarButton.Size = new System.Drawing.Size(72, 40);
-            this.BuscarButton.TabIndex = 68;
-            this.BuscarButton.Text = "Buscar";
-            this.BuscarButton.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.BuscarButton.UseVisualStyleBackColor = true;
-            this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
             // 
             // label2
             // 
@@ -151,22 +126,35 @@
             this.TiposDePersonasDataGridView.Size = new System.Drawing.Size(522, 298);
             this.TiposDePersonasDataGridView.TabIndex = 63;
             // 
+            // BuscarButton
+            // 
+            this.BuscarButton.Image = global::ProyectoFinal_2015_0944.Properties.Resources.preview_search_find_locate_1551;
+            this.BuscarButton.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BuscarButton.Location = new System.Drawing.Point(461, 94);
+            this.BuscarButton.Name = "BuscarButton";
+            this.BuscarButton.Size = new System.Drawing.Size(72, 40);
+            this.BuscarButton.TabIndex = 68;
+            this.BuscarButton.Text = "Buscar";
+            this.BuscarButton.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.BuscarButton.UseVisualStyleBackColor = true;
+            this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
+            // 
             // cDepartamentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(545, 512);
+            this.ClientSize = new System.Drawing.Size(545, 448);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.FechaFinalDateTimePicker);
             this.Controls.Add(this.FechaInicialDateTimePicker);
-            this.Controls.Add(this.ImprimirButton);
             this.Controls.Add(this.BuscarButton);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.CriterioTextBox);
             this.Controls.Add(this.FiltrarComboBox);
             this.Controls.Add(this.TiposDePersonasDataGridView);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "cDepartamentos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -183,7 +171,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DateTimePicker FechaFinalDateTimePicker;
         private System.Windows.Forms.DateTimePicker FechaInicialDateTimePicker;
-        private System.Windows.Forms.Button ImprimirButton;
         private System.Windows.Forms.Button BuscarButton;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;

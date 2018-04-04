@@ -30,19 +30,26 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>ProyectoFinal_2015_0944.Program</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net40\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net40\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -54,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLL\DepartamentosBLL.cs" />
+    <Compile Include="BLL\FacturaDetalleBLL.cs" />
     <Compile Include="BLL\PersonasBLL.cs" />
     <Compile Include="BLL\ProductosBLL.cs" />
     <Compile Include="BLL\TiposDePersonasBLL.cs" />
@@ -63,6 +71,12 @@
     </Compile>
     <Compile Include="Consultas\cDepartamentos.Designer.cs">
       <DependentUpon>cDepartamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\cFacturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\cFacturas.Designer.cs">
+      <DependentUpon>cFacturas.cs</DependentUpon>
     </Compile>
     <Compile Include="Consultas\cPersonas.cs">
       <SubType>Form</SubType>
@@ -106,6 +120,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registros\rFacturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\rFacturas.Designer.cs">
+      <DependentUpon>rFacturas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Registros\rPersonas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +150,36 @@
     <Compile Include="Registros\rTiposDePersonas.Designer.cs">
       <DependentUpon>rTiposDePersonas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Registros\rUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\rUsuarios.Designer.cs">
+      <DependentUpon>rUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FacturasCrystalReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FacturasCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\ImprimirFacturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\ImprimirFacturas.Designer.cs">
+      <DependentUpon>ImprimirFacturas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ImprimirPersonas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\ImprimirPersonas.Designer.cs">
+      <DependentUpon>ImprimirPersonas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ImprimirProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\ImprimirProductos.Designer.cs">
+      <DependentUpon>ImprimirProductos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reportes\PersonasCrystalReport.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -144,6 +194,9 @@
     </Compile>
     <EmbeddedResource Include="Consultas\cDepartamentos.resx">
       <DependentUpon>cDepartamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\cFacturas.resx">
+      <DependentUpon>cFacturas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Consultas\cPersonas.resx">
       <DependentUpon>cPersonas.cs</DependentUpon>
@@ -170,6 +223,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Registros\rFacturas.resx">
+      <DependentUpon>rFacturas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Registros\rPersonas.resx">
       <DependentUpon>rPersonas.cs</DependentUpon>
     </EmbeddedResource>
@@ -181,6 +237,22 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Registros\rTiposDePersonas.resx">
       <DependentUpon>rTiposDePersonas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\rUsuarios.resx">
+      <DependentUpon>rUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FacturasCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>FacturasCrystalReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ImprimirFacturas.resx">
+      <DependentUpon>ImprimirFacturas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ImprimirPersonas.resx">
+      <DependentUpon>ImprimirPersonas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ImprimirProductos.resx">
+      <DependentUpon>ImprimirProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\PersonasCrystalReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
@@ -204,6 +276,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="DataBase\BaseDeDatos_Y_Tablas.sql" />
+    <None Include="Resources\Storage-2.jpg" />
+    <None Include="Resources\servicios-de-limpieza-de-almacenes-en-Madrid.jpeg" />
+    <None Include="Resources\zonificacion-almacen-11.jpg" />
+    <None Include="Resources\zonificacion-almacen-1.jpg" />
+    <None Include="Resources\INTEGRA-WAREHOUSE.jpg" />
     <None Include="Resources\Save-as_37111.png" />
     <None Include="Resources\preview_search_find_locate_1551.png" />
     <None Include="Resources\New_File_36861.png" />
