@@ -145,7 +145,7 @@ namespace ProyectoFinal_2015_0944.Registros
         private Facturas LlenarClase()
         {
             Facturas f = new Facturas();
-            int a,b,c;
+            int a,b;
 
             int.TryParse(IDNumericUpDown.Text, out a);
             f.IdFactura = a;
@@ -154,6 +154,7 @@ namespace ProyectoFinal_2015_0944.Registros
             f.Monto = double.Parse(MontoTextBox.Text);
             f.Observacion = ObservacionTextBox.Text;
             f.Fecha = FechadateTimePicker.Value;
+            f.IdProducto = (int)IdProductoNumericUpDown.Value;
             f.Lista = p;
 
             return f;
@@ -162,6 +163,7 @@ namespace ProyectoFinal_2015_0944.Registros
         private void edit(Facturas f)
         {
             f.IdPersona = (int)IdPersonasNumericUpDown.Value;
+            f.IdProducto = (int)IdProductoNumericUpDown.Value;
             f.Monto = double.Parse(MontoTextBox.Text);
             f.Observacion = ObservacionTextBox.Text;
             f.Fecha = FechadateTimePicker.Value;
@@ -170,7 +172,7 @@ namespace ProyectoFinal_2015_0944.Registros
 
         private void NuevoButton_Click(object sender, EventArgs e)
         {
-
+            ClearAll();
         }
 
         private void ClearAll()
