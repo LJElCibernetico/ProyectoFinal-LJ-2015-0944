@@ -55,6 +55,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
@@ -64,6 +65,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DataBase\BaseDeDatos_Y_Tablas.sql" />
     <Content Include="fonts\icomoon.eot" />
     <Content Include="fonts\icomoon.ttf" />
     <Content Include="fonts\icomoon.woff" />
@@ -77,11 +79,22 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\estilos.css" />
-    <Content Include="fonts.css" />
+    <Content Include="css\fonts.css" />
     <Content Include="fonts\icomoon.svg" />
+    <Content Include="images\icono.ico" />
+    <Content Include="images\logo.png" />
     <Content Include="images\pokemoneda.png" />
+    <Content Include="images\wp.jpg" />
+    <Content Include="js\main.js" />
     <Content Include="Login.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="pages\menu.aspx" />
+    <Content Include="pages\Registros\rDepartamentos.aspx" />
+    <Content Include="pages\Registros\rProductos.aspx" />
+    <Content Include="pages\Registros\rTiposDePersonas.aspx" />
+    <Content Include="pages\Registros\rUsuarios.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLL\DepartamentosBLL.cs" />
@@ -107,11 +120,45 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="pages\menu.aspx.cs">
+      <DependentUpon>menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\menu.aspx.designer.cs">
+      <DependentUpon>menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Registros\rDepartamentos.aspx.cs">
+      <DependentUpon>rDepartamentos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\Registros\rDepartamentos.aspx.designer.cs">
+      <DependentUpon>rDepartamentos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Registros\rProductos.aspx.cs">
+      <DependentUpon>rProductos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\Registros\rProductos.aspx.designer.cs">
+      <DependentUpon>rProductos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Registros\rTiposDePersonas.aspx.cs">
+      <DependentUpon>rTiposDePersonas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\Registros\rTiposDePersonas.aspx.designer.cs">
+      <DependentUpon>rTiposDePersonas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Registros\rUsuarios.aspx.cs">
+      <DependentUpon>rUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\Registros\rUsuarios.aspx.designer.cs">
+      <DependentUpon>rUsuarios.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Pages\Consultas\" />
-    <Folder Include="Pages\Registros\" />
+    <Folder Include="pages\Consultas\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

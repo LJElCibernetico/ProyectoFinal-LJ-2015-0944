@@ -39,19 +39,19 @@
             this.PasswordTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.UserNameTextBox = new System.Windows.Forms.TextBox();
-            this.IDNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.ConsultarButton = new System.Windows.Forms.Button();
             this.EliminarButton = new System.Windows.Forms.Button();
             this.GuardarButton = new System.Windows.Forms.Button();
             this.NuevoButton = new System.Windows.Forms.Button();
-            this.BuscarPersonaButton = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.FechaDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.ConfirmacionTextBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.IDNumericUpDown)).BeginInit();
+            this.label1 = new System.Windows.Forms.Label();
+            this.BuscarPersonaButton = new System.Windows.Forms.Button();
+            this.IDNumericUpDown = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IDNumericUpDown)).BeginInit();
             this.SuspendLayout();
             // 
             // label7
@@ -128,13 +128,6 @@
             this.UserNameTextBox.Size = new System.Drawing.Size(270, 20);
             this.UserNameTextBox.TabIndex = 114;
             // 
-            // IDNumericUpDown
-            // 
-            this.IDNumericUpDown.Location = new System.Drawing.Point(99, 20);
-            this.IDNumericUpDown.Name = "IDNumericUpDown";
-            this.IDNumericUpDown.Size = new System.Drawing.Size(33, 20);
-            this.IDNumericUpDown.TabIndex = 112;
-            // 
             // ConsultarButton
             // 
             this.ConsultarButton.Image = global::ProyectoFinal_2015_0944.Properties.Resources.impresora;
@@ -186,28 +179,6 @@
             this.NuevoButton.UseVisualStyleBackColor = true;
             this.NuevoButton.Click += new System.EventHandler(this.NuevoButton_Click);
             // 
-            // BuscarPersonaButton
-            // 
-            this.BuscarPersonaButton.Image = global::ProyectoFinal_2015_0944.Properties.Resources.preview_search_find_locate_1551;
-            this.BuscarPersonaButton.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.BuscarPersonaButton.Location = new System.Drawing.Point(141, 12);
-            this.BuscarPersonaButton.Name = "BuscarPersonaButton";
-            this.BuscarPersonaButton.Size = new System.Drawing.Size(69, 36);
-            this.BuscarPersonaButton.TabIndex = 107;
-            this.BuscarPersonaButton.Text = "Buscar";
-            this.BuscarPersonaButton.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.BuscarPersonaButton.UseVisualStyleBackColor = true;
-            this.BuscarPersonaButton.Click += new System.EventHandler(this.BuscarPersonaButton_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(4, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(18, 13);
-            this.label1.TabIndex = 106;
-            this.label1.Text = "ID";
-            // 
             // FechaDateTimePicker
             // 
             this.FechaDateTimePicker.Location = new System.Drawing.Point(101, 157);
@@ -234,6 +205,35 @@
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(4, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(18, 13);
+            this.label1.TabIndex = 106;
+            this.label1.Text = "ID";
+            // 
+            // BuscarPersonaButton
+            // 
+            this.BuscarPersonaButton.Image = global::ProyectoFinal_2015_0944.Properties.Resources.preview_search_find_locate_1551;
+            this.BuscarPersonaButton.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BuscarPersonaButton.Location = new System.Drawing.Point(141, 12);
+            this.BuscarPersonaButton.Name = "BuscarPersonaButton";
+            this.BuscarPersonaButton.Size = new System.Drawing.Size(69, 36);
+            this.BuscarPersonaButton.TabIndex = 107;
+            this.BuscarPersonaButton.Text = "Buscar";
+            this.BuscarPersonaButton.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.BuscarPersonaButton.UseVisualStyleBackColor = true;
+            this.BuscarPersonaButton.Click += new System.EventHandler(this.BuscarPersonaButton_Click);
+            // 
+            // IDNumericUpDown
+            // 
+            this.IDNumericUpDown.Location = new System.Drawing.Point(99, 20);
+            this.IDNumericUpDown.Name = "IDNumericUpDown";
+            this.IDNumericUpDown.Size = new System.Drawing.Size(33, 20);
+            this.IDNumericUpDown.TabIndex = 112;
             // 
             // rUsuarios
             // 
@@ -264,8 +264,8 @@
             this.Name = "rUsuarios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro de Usuarios";
-            ((System.ComponentModel.ISupportInitialize)(this.IDNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IDNumericUpDown)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -281,16 +281,16 @@
         private System.Windows.Forms.TextBox PasswordTextBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox UserNameTextBox;
-        private System.Windows.Forms.NumericUpDown IDNumericUpDown;
         private System.Windows.Forms.Button ConsultarButton;
         private System.Windows.Forms.Button EliminarButton;
         private System.Windows.Forms.Button GuardarButton;
         private System.Windows.Forms.Button NuevoButton;
-        private System.Windows.Forms.Button BuscarPersonaButton;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DateTimePicker FechaDateTimePicker;
         private System.Windows.Forms.TextBox ConfirmacionTextBox;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.NumericUpDown IDNumericUpDown;
+        private System.Windows.Forms.Button BuscarPersonaButton;
+        private System.Windows.Forms.Label label1;
     }
 }

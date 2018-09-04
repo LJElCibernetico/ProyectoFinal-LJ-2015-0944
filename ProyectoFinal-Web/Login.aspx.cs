@@ -1,5 +1,6 @@
 ﻿using ProyectoFinal_2015_0944.BLL;
 using ProyectoFinal_2015_0944.Entidades;
+using ProyectoFinal_Web.Pages;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,6 +8,7 @@ using System.Linq.Expressions;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Windows.Forms;
 
 namespace ProyectoFinal_Web
 {
@@ -28,13 +30,11 @@ namespace ProyectoFinal_Web
 
             if (user.Exists(x => x.Username == userTextbox.Text) && user.Exists(x => x.Password == passwordTextbox.Text))
             {
-                /*MainForm mf = new MainForm(this);
-                mf.Show();
-                this.Hide();*/
+                Response.Redirect("~/pages/menu.aspx");
             }
             else
             {
-               /*MessageBox.Show("Nombre de usuario o contraseña incorrecta!!");*/
+                MessageBox.Show("Nombre de usuario o contraseña incorrecta!!");
             }
         }
     }
