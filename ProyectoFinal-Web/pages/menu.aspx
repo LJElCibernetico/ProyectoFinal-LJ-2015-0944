@@ -26,25 +26,25 @@
             </div>
             
             <ul class = "menu"> 
-                <!-- La clase activado solo estara para los elementos que tengan submenu-->
                 <li><a href="#"><i class="icono izquierda fas fa-file-signature"></i>Registros<i class="icono derecha fa fa-chevron-down"></i></a>
                     <ul>
-                        <li><a href="../pages/Registros/rUsuarios.aspx" target="execute">Usuarios</a></li>
+                        <!--<li><a href="../pages/Registros/rUsuarios.aspx" target="execute">Usuarios</a></li>
                         <li><a href="#">Personas</a></li>
                         <li><a href="../pages/Registros/rTiposDePersonas.aspx">Tipos de Persona</a></li>
                         <li><a href="#">Productos</a></li>
+                        <li><a href="#">Facturas</a></li>-->
                         <li><a href="../pages/Registros/rDepartamentos.aspx">Departamentos</a></li>
-                        <li><a href="#">Facturas</a></li>
                     </ul>
                 </li>
                 <li><a href="#"><i class="icono izquierda fas fa-file-export"></i>Consultas<i class="icono derecha fa fa-chevron-down"></i></a>
-                        <ul>
-                        <li><a href="#" target="execute">Usuarios</a></li>
+                     <ul>
+                       <!-- <li><a href="#" target="execute">Usuarios</a></li>
                         <li><a href="#">Personas</a></li>
                         <li><a href="#">Tipos de Persona</a></li>
                         <li><a href="#">Productos</a></li>
-                        <li><a href="#">Departamentos</a></li>
-                        <li><a href="#">Facturas</a></li>
+                        <li><a href="#">Facturas</a></li>-->
+                            
+                        <li><a href="../pages/Consultas/cDepartamentos.aspx">Departamentos</a></li>
                     </ul>
                 </li>
                 <li><a href="#"><i class="icono izquierda fas fa-wrench"></i>Opciones<i class="icono derecha fa fa-chevron-down"></i></a>

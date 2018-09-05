@@ -87,6 +87,7 @@
     <Content Include="images\wp.jpg" />
     <Content Include="js\main.js" />
     <Content Include="Login.aspx" />
+    <Content Include="pages\Consultas\cDepartamentos.aspx" />
     <Content Include="pages\menu.aspx" />
     <Content Include="pages\Registros\rDepartamentos.aspx" />
     <Content Include="pages\Registros\rProductos.aspx" />
@@ -119,6 +120,13 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Consultas\cDepartamentos.aspx.cs">
+      <DependentUpon>cDepartamentos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\Consultas\cDepartamentos.aspx.designer.cs">
+      <DependentUpon>cDepartamentos.aspx</DependentUpon>
     </Compile>
     <Compile Include="pages\menu.aspx.cs">
       <DependentUpon>menu.aspx</DependentUpon>
@@ -157,9 +165,7 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="pages\Consultas\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

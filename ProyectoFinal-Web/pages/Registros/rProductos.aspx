@@ -10,7 +10,7 @@
 <body>
     <div class="container" runat="server">
 		<div class="form__top" runat="server">
-			<h2>Registro de <span>Usuarios</span></h2>
+			<h2>Registro de <span>Productos</span></h2>
 		</div>		
 		<form class="form__reg" runat="server">
 			<asp:Button ID="ButtonBuscar" runat="server" Text="BUSCAR" Width="63px"/>

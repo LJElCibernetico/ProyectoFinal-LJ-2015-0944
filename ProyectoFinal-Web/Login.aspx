@@ -12,7 +12,7 @@
     <div class="login">
         <div class="login__container">
             <div class="login__top">
-                <img  class="login__img" src="./images/pokemoneda.png" alt=""/>
+                <img src="../images/logo.png" class="login__img"/>
                 <h2 class="login__title">Iniciar <span>Sesion</span></h2>
             </div>
             <form class="login__form" runat="server">

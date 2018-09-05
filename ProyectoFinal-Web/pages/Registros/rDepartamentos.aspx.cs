@@ -41,17 +41,17 @@ namespace ProyectoFinal_Web.pages.Registros
                 Departamentos tdp1 = LlenarClase();
 
                 if (DepartamentosBLL.Guardar(tdp1))
-                    MessageBox.Show("Tipo de Persona Guardada");
+                    MessageBox.Show("Departamento Guardado");
                 else
-                    MessageBox.Show("Este Tipo de Persona No Pudo Ser Guardada");
+                    MessageBox.Show("Este Departamento No Pudo Ser Guardado");
             }
             else
             {
                 edit(tdp);
                 if (DepartamentosBLL.Modificar(tdp))
-                    MessageBox.Show("Acaba de Modificar Este Tipo de Persona");
+                    MessageBox.Show("Acaba de Modificar Este Departamento");
                 else
-                    MessageBox.Show("No Se Pudo Modificar Este Tipo de Persona");
+                    MessageBox.Show("No Se Pudo Modificar Este Departamento");
             }
             ClearAll();
         }
@@ -76,11 +76,11 @@ namespace ProyectoFinal_Web.pages.Registros
 
             if (DepartamentosBLL.Eliminar(ID))
             {
-                MessageBox.Show("Tipo de Persona Eliminada");
+                MessageBox.Show("Departamento Eliminada");
             }
             else
             {
-                MessageBox.Show("No se puede eliminar un Tipo de Persona que no existe");
+                MessageBox.Show("No se puede eliminar un Departamento que no existe");
             }
             ClearAll();
         }
@@ -94,12 +94,12 @@ namespace ProyectoFinal_Web.pages.Registros
 
             if (tdp != null)
             {
-                MessageBox.Show("Tipo de Persona Encontada");
+                MessageBox.Show("Departamento Encontado");
                 TextBoxDep.Text = tdp.Departamento;
             }
             else
             {
-                MessageBox.Show("Tipo de Persona No Encontada");
+                MessageBox.Show("Departamento No Encontado");
             }
         }
     }

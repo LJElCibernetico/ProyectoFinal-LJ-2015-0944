@@ -243,10 +243,10 @@ html {
 }
 
 .container .form__reg {
-    padding: 0 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 239px;
 }
 
 .container .btn__form {
