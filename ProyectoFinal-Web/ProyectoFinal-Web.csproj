@@ -65,11 +65,11 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DataBase\BaseDeDatos_Y_Tablas.sql" />
     <Content Include="fonts\icomoon.eot" />
     <Content Include="fonts\icomoon.ttf" />
     <Content Include="fonts\icomoon.woff" />
     <None Include="packages.config" />
+    <Content Include="pages\Site.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -93,27 +93,12 @@
     <Content Include="pages\Registros\rProductos.aspx" />
     <Content Include="pages\Registros\rTiposDePersonas.aspx" />
     <Content Include="pages\Registros\rUsuarios.aspx" />
+    <Content Include="pages\WebForm1.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BLL\DepartamentosBLL.cs" />
-    <Compile Include="BLL\FacturaDetalleBLL.cs" />
-    <Compile Include="BLL\PersonasBLL.cs" />
-    <Compile Include="BLL\ProductosBLL.cs" />
-    <Compile Include="BLL\TiposDePersonasBLL.cs" />
-    <Compile Include="BLL\UsuariosBLL.cs" />
-    <Compile Include="DAL\Contexto.cs" />
-    <Compile Include="Entidades\CompraDetalle.cs" />
-    <Compile Include="Entidades\Compras.cs" />
-    <Compile Include="Entidades\Departamentos.cs" />
-    <Compile Include="Entidades\FacturaDetalle.cs" />
-    <Compile Include="Entidades\Facturas.cs" />
-    <Compile Include="Entidades\Personas.cs" />
-    <Compile Include="Entidades\Productos.cs" />
-    <Compile Include="Entidades\TiposDePersonas.cs" />
-    <Compile Include="Entidades\Usuarios.cs" />
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -162,6 +147,20 @@
     </Compile>
     <Compile Include="pages\Registros\rUsuarios.aspx.designer.cs">
       <DependentUpon>rUsuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="pages\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

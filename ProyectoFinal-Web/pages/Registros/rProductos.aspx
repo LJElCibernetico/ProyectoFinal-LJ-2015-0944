@@ -17,11 +17,6 @@
             
             <asp:TextBox  class="input" ID="TextBoxID" placeholder="ID" runat="server" Width="30px"></asp:TextBox>
             
-            <!--<asp:RegularExpressionValidator ID="RegularExpressionValidator1"
-                ControlToValidate="TextBoxID" runat="server"
-                ErrorMessage="Only Numbers allowed"
-                ValidationExpression="\d+">
-            </asp:RegularExpressionValidator>-->
             <asp:TextBox class="input" ID="TextBoxUsername" placeholder="Username" runat="server"></asp:TextBox>
             <asp:TextBox class="input" ID="TextBoxPassword" placeholder="Password" runat="server"></asp:TextBox>
             <asp:TextBox class="input" ID="TextBoxConfirmacion" placeholder="Confirmacion" runat="server"></asp:TextBox>

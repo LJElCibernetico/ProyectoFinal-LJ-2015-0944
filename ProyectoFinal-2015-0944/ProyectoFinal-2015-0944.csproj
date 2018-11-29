@@ -97,15 +97,6 @@
       <DependentUpon>cTiposDePersonas.cs</DependentUpon>
     </Compile>
     <Compile Include="DAL\Contexto.cs" />
-    <Compile Include="Entidades\CompraDetalle.cs" />
-    <Compile Include="Entidades\Compras.cs" />
-    <Compile Include="Entidades\Departamentos.cs" />
-    <Compile Include="Entidades\FacturaDetalle.cs" />
-    <Compile Include="Entidades\Facturas.cs" />
-    <Compile Include="Entidades\Personas.cs" />
-    <Compile Include="Entidades\Productos.cs" />
-    <Compile Include="Entidades\TiposDePersonas.cs" />
-    <Compile Include="Entidades\Usuarios.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -293,6 +284,9 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Entidades\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,6 +1,4 @@
-﻿using ProyectoFinal_2015_0944.BLL;
-using ProyectoFinal_2015_0944.Entidades;
-using ProyectoFinal_Web.Pages;
+﻿using ProyectoFinal_Web.Pages;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,20 +20,7 @@ namespace ProyectoFinal_Web
 
         protected void buttonEntrar_Click(object sender, EventArgs e)
         {
-            Expression<Func<Usuarios, bool>> filtrar = x => true;
-            List<Usuarios> user = new List<Usuarios>();
-
-            filtrar = t => t.Username.Contains(userTextbox.Text);
-            user = UsuariosBLL.GetList(filtrar);
-
-            if (user.Exists(x => x.Username == userTextbox.Text) && user.Exists(x => x.Password == passwordTextbox.Text))
-            {
-                Response.Redirect("~/pages/menu.aspx");
-            }
-            else
-            {
-                MessageBox.Show("Nombre de usuario o contraseña incorrecta!!");
-            }
+            
         }
     }
 }
