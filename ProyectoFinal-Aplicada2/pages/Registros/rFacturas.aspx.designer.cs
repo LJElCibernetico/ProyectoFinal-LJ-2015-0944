@@ -76,13 +76,13 @@ namespace ProyectoFinal_Aplicada2.pages.Registros {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
         
         /// <summary>
-        /// Button1 control.
+        /// ButtonBuscarCliente control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button ButtonBuscarCliente;
         
         /// <summary>
         /// TextBoxNombreCliente control.

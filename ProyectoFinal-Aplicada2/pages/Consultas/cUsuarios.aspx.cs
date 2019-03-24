@@ -20,10 +20,6 @@ namespace ProyectoFinal_Aplicada2.pages.Consultas
             
             if (!IsPostBack)
             {
-                /*UsuarioReportViewer.ProcessingMode = ProcessingMode.Local;
-                UsuarioReportViewer.LocalReport.ReportPath = Server.MapPath(@"~\Report\UsuarioReport.rdlc");
-                UsuarioReportViewer.AsyncRendering = true;*/
-
                 TextBoxFechaInicial.Text = DateTime.Now.Date.ToString("yyyy-MM-dd");
                 TextBoxFechaFinal.Text = DateTime.Now.Date.ToString("yyyy-MM-dd");
 
@@ -32,7 +28,6 @@ namespace ProyectoFinal_Aplicada2.pages.Consultas
                 UsuariosReportViewer.LocalReport.DataSources.Clear();
                 UsuariosReportViewer.LocalReport.ReportPath = Server.MapPath(@"~\Reportes\ReportUsuarios.rdlc");
                 
-                    TextBoxBuscar.TextMode.Equals(TextBoxMode.Number);
             }
         }
 
@@ -46,11 +41,19 @@ namespace ProyectoFinal_Aplicada2.pages.Consultas
 
         protected void BuscarLinkButton_Click(object sender, EventArgs e)
         {
-            string i = DateTime.Parse(TextBoxFechaInicial.Text).Date.ToString("yyyy-MM-dd");
-            DateTime fInicial = DateTime.Parse(i);
+            Filtrar();
+            RepositorioBase<Usuarios> rep = new RepositorioBase<Usuarios>();
+            UsuarioGridView.DataSource = rep.GetList(filter);
+            UsuarioGridView.DataBind();
+        }
 
-            string f = DateTime.Parse(TextBoxFechaFinal.Text).Date.ToString("yyyy-MM-dd");
-            DateTime fFinal = DateTime.Parse(f);
+        RepositorioBase<Usuarios> usuario = new RepositorioBase<Usuarios>();
+
+
+        private void Filtrar()
+        {
+            DateTime fInicial = DateTime.Parse(TextBoxFechaInicial.Text);
+            DateTime fFinal = DateTime.Parse(TextBoxFechaFinal.Text);
 
             int id = 0;
             switch (DropDownListFiltro.SelectedIndex)
@@ -72,16 +75,10 @@ namespace ProyectoFinal_Aplicada2.pages.Consultas
                     filter = (x => x.Password.Contains(TextBoxBuscar.Text) && ((x.Fecha >= fInicial) && (x.Fecha <= fFinal)));
                     break;
             }
-
-            RepositorioBase<Usuarios> rep = new RepositorioBase<Usuarios>();
-            UsuarioGridView.DataSource = rep.GetList(filter);
-            UsuarioGridView.DataBind();
         }
-
-        RepositorioBase<Usuarios> usuario = new RepositorioBase<Usuarios>();
-
         protected void ButtonImprimir_Click(object sender, EventArgs e)
         {
+            Filtrar();
             UsuariosReportViewer.LocalReport.DataSources.Clear();
             UsuariosReportViewer.LocalReport.DataSources.Add(new ReportDataSource("UsuariosDataSet",  usuario.GetList(filter)));
             UsuariosReportViewer.LocalReport.Refresh();

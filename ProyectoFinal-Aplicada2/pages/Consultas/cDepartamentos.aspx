@@ -39,36 +39,36 @@
                         <asp:GridView ID="DepartamentoGridView" runat="server" AllowPaging="true" PageSize="7" CssClass="table table-striped table-hover table-responsive-lg" AutoGenerateColumns="False">
                             <HeaderStyle BackColor="#337ab7" Font-Bold="True" ForeColor="White" />
                             <Columns>
-                                <asp:BoundField DataField="IdDepartamento" HeaderText="Departamento ID"/>
-                                <asp:BoundField DataField="Departamento" HeaderText="Nombre del Departamento"/>
+                                <asp:BoundField DataField="IdDepartamento" HeaderText="Departamento ID" />
+                                <asp:BoundField DataField="Departamento" HeaderText="Nombre del Departamento" />
                             </Columns>
                         </asp:GridView>
                     </div>
                 </div>
 
-                <%--<!-- Large modal -->
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Reporte</button>
+                <!-- Large modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Reporte</button>
 
-            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Reporte de Cuentas Bancarias</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <div id="div1">
-                                <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
-                                <rsweb:reportviewer id="CuentasReportViewer" width="100%" runat="server"></rsweb:reportviewer>
+                <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Reporte de Cuentas Bancarias</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
-                        </div>
-                        <div class="modal-footer">
+                            <div class="modal-body">
+                                <div id="div1">
+                                    <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+                                    <rsweb:reportviewer id="CuentasReportViewer" width="100%" runat="server"></rsweb:reportviewer>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>--%>
             </div>
         </div>
     </div>

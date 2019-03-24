@@ -19,13 +19,15 @@ namespace Entidades
         public String Observacion { get; set; }
         public virtual List<FacturaDetalle> Lista { get; set; }
 
-        public Facturas(int idFactura, int idCliente, DateTime fecha, double monto, string observacion)
+        public Facturas(int idFactura, int idCliente, int idProducto, DateTime fecha, double monto, string observacion, List<FacturaDetalle> lista)
         {
             IdFactura = idFactura;
             IdCliente = idCliente;
+            IdProducto = idProducto;
             Fecha = fecha;
             Monto = monto;
             Observacion = observacion;
+            Lista = lista;
         }
 
         public Facturas()

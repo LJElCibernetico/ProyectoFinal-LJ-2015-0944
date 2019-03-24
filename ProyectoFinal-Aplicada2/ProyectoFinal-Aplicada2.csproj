@@ -119,6 +119,7 @@
     <Content Include="pages\Registros\rDepartamentos.aspx" />
     <Content Include="content\toastr.scss" />
     <Content Include="content\toastr.less" />
+    <Content Include="pages\SignUp\Web.config" />
     <None Include="Properties\PublishProfiles\FinalProyect - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\FinalProyect - Web Deploy.pubxml" />
     <Content Include="pages\Registros\rFacturas.aspx" />

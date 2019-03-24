@@ -19,7 +19,7 @@
                 <asp:RequiredFieldValidator ValidationGroup="id_f" SetFocusOnError="true" ForeColor="Red" ID="RequiredFieldValidator7" ControlToValidate="TextBoxFacturaID" runat="server" Display="Dynamic" ErrorMessage="Introduzca un id"></asp:RequiredFieldValidator>
             </div>
             <div class="btn-group-col-md-1">
-                <asp:Button class="btn btn-primary" ValidationGroup="id_f" ID="ButtonBuscarFactura" runat="server" Text="Buscar" />
+                <asp:Button class="btn btn-primary" ValidationGroup="id_f" ID="ButtonBuscarFactura" runat="server" Text="Buscar" OnClick="ButtonBuscarFactura_Click" />
             </div>
 
         </div>
@@ -44,7 +44,7 @@
                         <asp:RequiredFieldValidator ValidationGroup="id_c" SetFocusOnError="true" ForeColor="Red" ID="RequiredFieldValidator1" ControlToValidate="TextBoxClienteID" runat="server" Display="Dynamic" ErrorMessage="Introduzca un id"></asp:RequiredFieldValidator>
                     </div>
                     <div class="btn-group-col-md-1">
-                        <asp:Button class="btn btn-primary" ValidationGroup="id_c" ID="Button1" runat="server" Text="Buscar" />
+                        <asp:Button class="btn btn-primary" ValidationGroup="id_c" ID="ButtonBuscarCliente" runat="server" Text="Buscar" />
                     </div>
                 </div>
                 <div class="form-group col-md-3 col-md-offset-3">
@@ -120,7 +120,7 @@
             </div>
 
             <div class="btn-block text-center">
-                <asp:Button class="btn btn-primary" ValidationGroup="add" ID="ButtonAgregar" runat="server" Text="ADD" />
+                <asp:Button class="btn btn-primary" ValidationGroup="add" ID="ButtonAgregar" runat="server" Text="ADD" OnClick="ButtonAgregar_Click" />
             </div>
 
             <div class="row justify-content-center mt-3">
@@ -128,9 +128,10 @@
                     <asp:GridView ID="FacturaGridView" runat="server" AllowPaging="true" PageSize="7" CssClass="table table-striped table-hover table-responsive-lg" AutoGenerateColumns="False">
                         <HeaderStyle BackColor="#337ab7" Font-Bold="True" ForeColor="White" />
                         <Columns>
-                            <asp:BoundField DataField="IdUsuario" HeaderText="UsuarioId" />
-                            <asp:BoundField DataField="Username" HeaderText="UserName" />
-                            <asp:BoundField DataField="Password" HeaderText="Password" />
+                            <asp:BoundField DataField="Cantidad" HeaderText="Cantidad" />
+                            <asp:BoundField DataField="NombreProducto" HeaderText="Nombre del Producto" />
+                            <asp:BoundField DataField="Precio" HeaderText="Precio" />
+                            <asp:BoundField DataField="Importe" HeaderText="Importe" />
                         </Columns>
                     </asp:GridView>
                 </div>
@@ -152,8 +153,8 @@
         </div>
 
         <div class="btn-block text-center" >
-            <asp:Button class="btn btn-primary" ID="ButtonNuevo" runat="server" Text="Nuevo" />
-            <asp:Button class="btn btn-success" ValidationGroup="save" ID="ButtonGuardar" runat="server" Text="Guardar" />
+            <asp:Button class="btn btn-primary" ID="ButtonNuevo" runat="server" Text="Nuevo" OnClick="ButtonNuevo_Click" />
+            <asp:Button class="btn btn-success" ValidationGroup="save" ID="ButtonGuardar" runat="server" Text="Guardar" OnClick="ButtonGuardar_Click" />
             <asp:Button class="btn btn-danger" ValidationGroup="id_f" ID="ButtonEliminar" runat="server" Text="Eliminar" />
         </div>
     </div>

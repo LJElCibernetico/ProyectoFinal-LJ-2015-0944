@@ -100,6 +100,11 @@ namespace BLL
             return Lista;
         }
 
+        public bool Guardar(object v)
+        {
+            throw new NotImplementedException();
+        }
+
         public void Dispose()
         {
             _contexto.Dispose();

@@ -57,6 +57,7 @@
                                 <asp:BoundField DataField="IdUsuario" HeaderText="UsuarioId" />
                                 <asp:BoundField DataField="Username" HeaderText="UserName" />
                                 <asp:BoundField DataField="Password" HeaderText="Password" />
+                                <asp:BoundField DataField="Fecha" HeaderText="Fecha" />
                             </Columns>
                         </asp:GridView>
                     </div>
